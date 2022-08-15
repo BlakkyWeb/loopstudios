@@ -1,0 +1,987 @@
+:root{
+    --White-: 0, 0%, 100%;
+    --Black-: 0, 0%, 0%;
+    --DarkGray-: 0, 0%, 55%;
+    --VeryDarkGray-: 0, 0%, 41%;
+    --font1-: 'Alata', sans-serif;
+    --font2-: 'Josefin Sans', sans-serif;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .1s ease-in-out
+}
+.mobile-nav{
+    display: none;
+}
+
+
+.header{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3.75rem 9.375rem;
+}
+.logoNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav > a{
+    text-decoration: none;
+    color: hsl(var(--White-));
+    margin-right: .9375rem;
+    font-family: var(--font2-);
+    font-size: .875rem;
+    padding: .5rem 0rem;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+}
+.nav > a:hover{
+    border-bottom: .125rem solid white;
+}
+.headerText{
+    margin: 6.875rem 0rem;
+}
+.headerText > div > p{
+    max-width: 31.25rem;
+    font-size: 3.75rem;
+    color: hsl(var(--White-));
+    border: .125rem solid white;
+    font-family: var(--font2-);
+    padding: 2.5rem;
+}
+.logoNav > img:nth-child(3){
+    display: none;
+}
+
+.illustration{
+    margin: 6.25rem 9.375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.illustration > img{
+    width: 31.25rem;
+}
+.illustrationAside{
+    padding:  12.5rem 5rem 5rem 5rem;
+    position: relative;
+}
+.illustrationAside::after{
+    content: '';
+    background-color: rgb(198, 105, 198);
+    width: 6.25rem;
+    height: 6.25rem;
+    position: absolute;
+    top: 5.375rem;
+    left: 0;
+}
+.illustrationAside > p:nth-child(2){
+    font-size: 3.125rem;
+    font-weight: lighter;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    word-spacing: .3125rem;
+    font-family: var(--font2-);
+}
+.illustrationAside > p:nth-child(3){
+    min-width: 30rem;
+    line-height: 1.5625rem;
+    color: hsl(var(--DarkGray-));
+    font-family: var(--font1-);
+}
+.creation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.125rem;
+    padding: 0rem 9.375rem;
+}
+.creation > p{
+    font-size: 3.125rem;
+    font-family: var(--font2-);
+}
+.creation > button{
+    border: .125rem solid black;
+    padding: .625rem 3.125rem;
+    background-color: white;
+    font-family: var(--font1-);
+    letter-spacing: .1875rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.creation > button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0rem 6.25rem 12.5rem;
+    grid-gap: 1.875rem;
+}
+.grid > div:nth-child(1){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/desktop/image-deep-earth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid > div:nth-child(1) > p{
+    max-width: 9.375rem;
+}
+.grid > div:nth-child(1):hover{
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url('./images/desktop/image-deep-earth.jpg');
+}
+.grid > div:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/desktop/image-night-arcade.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid > div:nth-child(2) > p{
+    max-width: 9.375rem;
+}
+.grid > div:nth-child(2):hover{
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url('./images/desktop/image-night-arcade.jpg');
+}
+.grid > div:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/desktop/image-soccer-team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid > div:nth-child(3) > p{
+    max-width: 9.375rem;
+}
+.grid > div:nth-child(3):hover{
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url('./images/desktop/image-soccer-team.jpg');
+}
+.grid > div:nth-child(4){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/desktop/image-grid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid > div:nth-child(4) > p{
+    max-width: 9.375rem;
+}
+.grid > div:nth-child(4):hover{
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url('./images/desktop/image-grid.jpg');
+}
+.grid > div:nth-child(5){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/desktop/image-from-above.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid > div:nth-child(5) > p{
+    max-width: 12.5rem;
+}
+.grid > div:nth-child(5):hover{
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url('./images/desktop/image-from-above.jpg');
+}
+.grid > div:nth-child(6){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/desktop/image-pocket-borealis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid > div:nth-child(6) > p{
+    max-width: 9.375rem;
+}
+.grid > div:nth-child(6):hover{
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url('./images/desktop/image-pocket-borealis.jpg');
+}
+.grid > div:nth-child(7){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/desktop/image-curiosity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid > div:nth-child(7) > p{
+    max-width: 9.375rem;
+}
+.grid > div:nth-child(7):hover{
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url('./images/desktop/image-curiosity.jpg');
+}
+.grid > div:nth-child(8){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/desktop/image-fisheye.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid > div:nth-child(8) > p{
+    max-width: 9.375rem;
+}
+.grid > div:nth-child(8):hover{
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url("./images/desktop/image-fisheye.jpg");
+}
+.grid >  div{
+    padding: 21.875rem 1.5625rem 1.5625rem 1.5625rem;
+    color: #fff;
+}
+.grid >  div:hover{
+    color: #000;
+}
+.grid > div > p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--font2-);
+}
+.footer{
+    background-color: hsl(var(--Black-));
+    padding: 3.125rem 9.375rem;
+    font-family: var(--font1-);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoMed{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.875rem;
+}
+.logoMed > img{
+    margin-bottom: 3.125rem;
+}
+.med > img{
+    margin-left: 1.25rem;
+    padding: .5rem 0rem;
+}
+.med > img:hover{
+    border-bottom: .125rem solid white;
+    cursor: pointer;
+}
+.navCopy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.med{
+    margin-bottom: 3.125rem;
+}
+.copy > p{
+    color: hsl(var(--DarkGray-));
+    font-weight: 600;
+}
+
+
+
+@media (min-width: 391px) and (max-width:475px){
+    .container{
+        width: 100%;
+    }
+    .mobile-nav{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 100%;
+        padding: 3.125rem 1.25rem;
+        background: #000;
+        position: absolute;
+        top: 0;
+    }
+    .mobile-nav.lol{
+        display: flex;
+    }
+    .mobile-nav > .up{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6.25rem;
+    }
+    .mobile-nav > .up > img:nth-child(2){
+        margin-left: 80%;
+    }
+    .mobile-nav > .links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start
+    }
+    .mobile-nav > .links > a{
+        color: hsl(var(--DarkGray-));
+        text-decoration: none;
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+        font-weight: 400;
+    }
+    .header{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/mobile/image-hero.jpg);
+        background-size: cover;
+        padding: 3.75rem 1.25rem;
+    }
+    .logoNav > .nav{
+        display: none;
+    }
+    .logoNav > img:nth-child(3){
+        display: block;
+    }
+    .headerText > div{
+        border: .125rem solid white;
+    }
+    .headerText > div > p{
+        max-width: 18.75rem;
+        font-size: 2.5rem;
+        color: hsl(var(--White-));
+        border: none;
+        font-family: var(--font2-);
+        padding: 2.5rem;
+    }
+    .illustration > img{
+        width: 100%;
+        margin-bottom: 3.125rem;
+    }
+    .illustrationAside{
+        padding: 0 1.25rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .illustrationAside > p:nth-child(2){
+        text-align: center;
+        font-size: 2.5rem;
+        max-width: 90%;
+    }
+    .illustrationAside > p:nth-child(3){
+        max-width: 90%;
+        min-width: auto;
+        margin-bottom: 3.125rem;
+        text-align: center;
+    }
+    .illustration{
+        flex-direction: column;
+        margin: 6.25rem 1.25rem;
+    }
+    .illustrationAside::after{
+        display: none;
+    }
+    .creation{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1.25rem;
+        position:relative;
+    }
+    .creation > p{
+        font-size: 2.375rem;
+        font-weight: 400;
+    }
+    .creation > button{
+        position: absolute;
+        top: 96.875rem;
+
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0rem 1.25rem 15.625rem;
+        grid-gap: 1.875rem;
+    }
+    .grid >  div{
+        padding: 3.125rem 1.5625rem 1.5625rem 1.5625rem;
+        color: #fff;
+    }
+    .grid > div:nth-child(1){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-deep-earth.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(1) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(1):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-deep-earth.jpg');
+    }
+    .grid > div:nth-child(2){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-night-arcade.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(2) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(2):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-night-arcade.jpg');
+    }
+    .grid > div:nth-child(3){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-soccer-team.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(3) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(3):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-soccer-team.jpg');
+    }
+    .grid > div:nth-child(4){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-grid.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(4) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(4):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-grid.jpg');
+    }
+    .grid > div:nth-child(5){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-from-above.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(5) > p{
+        max-width: 12.5rem;
+    }
+    .grid > div:nth-child(5):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-from-above.jpg');
+    }
+    .grid > div:nth-child(6){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-pocket-borealis.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(6) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(6):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-pocket-borealis.jpg');
+    }
+    .grid > div:nth-child(7){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-curiosity.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(7) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(7):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-curiosity.jpg');
+    }
+    .grid > div:nth-child(8){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/mobile/image-fisheye.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(8) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(8):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/mobile/image-fisheye.jpg");
+    }
+    .grid >  div:hover{
+        color: #fff;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 3.125rem 0;
+    }
+    .logoMed{
+        align-items: center;
+        justify-content: center;
+    }
+    .logoMed > img{
+        margin-bottom: 1.5625rem;
+    }
+    .logoMed > .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoMed > .nav > a{
+        font-size: 1rem;
+        margin-bottom: 1.5625rem;
+    }
+    .navCopy{
+        align-items: center;
+        justify-content: center;
+    }
+    .med{
+        margin-bottom: 1.5625rem;
+    }
+}
+
+
+
+@media (min-width: 375px) and (max-width:390px){
+    .container{
+        width: 100%;
+    }
+    .mobile-nav{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 100%;
+        padding: 3.125rem 1.25rem;
+        background: #000;
+        position: absolute;
+        top: 0;
+    }
+    .mobile-nav.lol{
+        display: flex;
+    }
+    .mobile-nav > .up{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6.25rem;
+    }
+    .mobile-nav > .up > img:nth-child(2){
+        margin-left: 100px;
+    }
+    .mobile-nav > .links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start
+    }
+    .mobile-nav > .links > a{
+        color: hsl(var(--DarkGray-));
+        text-decoration: none;
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+        font-weight: 400;
+    }
+    .header{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/mobile/image-hero.jpg);
+        background-size: cover;
+        padding: 3.75rem 1.25rem;
+    }
+    .logoNav > .nav{
+        display: none;
+    }
+    .logoNav > img:nth-child(3){
+        display: block;
+    }
+    .headerText > div{
+        border: .125rem solid white;
+    }
+    .headerText > div > p{
+        max-width: 18.75rem;
+        font-size: 38px;
+        color: hsl(var(--White-));
+        border: none;
+        font-family: var(--font2-);
+        padding: 2.5rem;
+    }
+    .illustration > img{
+        width: 100%;
+        margin-bottom: 3.125rem;
+    }
+    .illustrationAside{
+        padding: 0 1.25rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .illustrationAside > p:nth-child(2){
+        text-align: center;
+        font-size: 35px;
+        max-width: 100%;
+    }
+    .illustrationAside > p:nth-child(3){
+        max-width: 100%;
+        min-width: auto;
+        margin-bottom: 2.8125rem;
+        text-align: center;
+    }
+    .illustration{
+        flex-direction: column;
+        margin: 6.25rem 1.25rem;
+    }
+    .illustrationAside::after{
+        display: none;
+    }
+    .creation{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1.25rem;
+        position:relative;
+    }
+    .creation > p{
+        font-size: 2.375rem;
+        font-weight: 400;
+    }
+    .creation > button{
+        position: absolute;
+        top: 96.875rem;
+
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0rem 1.25rem 15.625rem;
+        grid-gap: 1.875rem;
+    }
+    .grid >  div{
+        padding: 3.125rem 1.5625rem 1.5625rem 1.5625rem;
+        color: #fff;
+    }
+    .grid > div:nth-child(1){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-deep-earth.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(1) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(1):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-deep-earth.jpg');
+    }
+    .grid > div:nth-child(2){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-night-arcade.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(2) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(2):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-night-arcade.jpg');
+    }
+    .grid > div:nth-child(3){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-soccer-team.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(3) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(3):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-soccer-team.jpg');
+    }
+    .grid > div:nth-child(4){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-grid.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(4) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(4):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-grid.jpg');
+    }
+    .grid > div:nth-child(5){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-from-above.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(5) > p{
+        max-width: 12.5rem;
+    }
+    .grid > div:nth-child(5):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-from-above.jpg');
+    }
+    .grid > div:nth-child(6){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-pocket-borealis.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(6) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(6):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-pocket-borealis.jpg');
+    }
+    .grid > div:nth-child(7){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-curiosity.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(7) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(7):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-curiosity.jpg');
+    }
+    .grid > div:nth-child(8){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/mobile/image-fisheye.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(8) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(8):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/mobile/image-fisheye.jpg");
+    }
+    .grid >  div:hover{
+        color: #fff;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 3.125rem 0;
+    }
+    .logoMed{
+        align-items: center;
+        justify-content: center;
+    }
+    .logoMed > img{
+        margin-bottom: 1.5625rem;
+    }
+    .logoMed > .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoMed > .nav > a{
+        font-size: 1rem;
+        margin-bottom: 1.5625rem;
+    }
+    .navCopy{
+        align-items: center;
+        justify-content: center;
+    }
+    .med{
+        margin-bottom: 1.5625rem;
+    }
+}
+
+
+
+@media (max-width:374px){
+    .container{
+        width: 100%;
+    }
+    .mobile-nav{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 100%;
+        padding: 3.125rem 1.25rem;
+        background: #000;
+        position: absolute;
+        top: 0;
+    }
+    .mobile-nav.lol{
+        display: flex;
+    }
+    .mobile-nav > .up{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6.25rem;
+    }
+    .mobile-nav > .up > img:nth-child(2){
+        margin-left: 50px;
+        width: 100%;
+    }
+    .mobile-nav > .links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start
+    }
+    .mobile-nav > .links > a{
+        color: hsl(var(--DarkGray-));
+        text-decoration: none;
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+        font-weight: 400;
+    }
+    .header{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/mobile/image-hero.jpg);
+        background-size: cover;
+        padding: 3.75rem 1.25rem;
+    }
+    .logoNav > .nav{
+        display: none;
+    }
+    .logoNav > img:nth-child(3){
+        display: block;
+    }
+    .headerText > div{
+        border: .125rem solid white;
+    }
+    .headerText > div > p{
+        max-width: 18.75rem;
+        font-size: 2rem;
+        color: hsl(var(--White-));
+        border: none;
+        font-family: var(--font2-);
+        padding: 2.1875rem;
+    }
+    .illustration > img{
+        width: 100%;
+        margin-bottom: 3.125rem;
+    }
+    .illustrationAside{
+        padding: 0 1.25rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .illustrationAside > p:nth-child(2){
+        text-align: center;
+        font-size: 1.875rem;
+        max-width: 100%;
+    }
+    .illustrationAside > p:nth-child(3){
+        max-width: 100%;
+        min-width: auto;
+        margin-bottom: 2.8125rem;
+        text-align: center;
+    }
+    .illustration{
+        flex-direction: column;
+        margin: 6.25rem 1.25rem;
+    }
+    .illustrationAside::after{
+        display: none;
+    }
+    .creation{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1.25rem;
+        position:relative;
+    }
+    .creation > p{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .creation > button{
+        position: absolute;
+        top: 96.875rem;
+
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0rem 1.25rem 15.625rem;
+        grid-gap: 1.875rem;
+    }
+    .grid >  div{
+        padding: 3.125rem 1.5625rem 1.5625rem 1.5625rem;
+        color: #fff;
+    }
+    .grid > div:nth-child(1){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-deep-earth.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(1) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(1):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-deep-earth.jpg');
+    }
+    .grid > div:nth-child(2){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-night-arcade.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(2) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(2):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-night-arcade.jpg');
+    }
+    .grid > div:nth-child(3){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-soccer-team.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(3) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(3):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-soccer-team.jpg');
+    }
+    .grid > div:nth-child(4){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-grid.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(4) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(4):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-grid.jpg');
+    }
+    .grid > div:nth-child(5){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-from-above.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(5) > p{
+        max-width: 12.5rem;
+    }
+    .grid > div:nth-child(5):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-from-above.jpg');
+    }
+    .grid > div:nth-child(6){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-pocket-borealis.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(6) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(6):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-pocket-borealis.jpg');
+    }
+    .grid > div:nth-child(7){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-curiosity.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(7) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(7):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/mobile/image-curiosity.jpg');
+    }
+    .grid > div:nth-child(8){
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/mobile/image-fisheye.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid > div:nth-child(8) > p{
+        max-width: 9.375rem;
+    }
+    .grid > div:nth-child(8):hover{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/mobile/image-fisheye.jpg");
+    }
+    .grid >  div:hover{
+        color: #fff;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 3.125rem 0;
+    }
+    .logoMed{
+        align-items: center;
+        justify-content: center;
+    }
+    .logoMed > img{
+        margin-bottom: 1.5625rem;
+    }
+    .logoMed > .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoMed > .nav > a{
+        font-size: 1rem;
+        margin-bottom: 1.5625rem;
+    }
+    .navCopy{
+        align-items: center;
+        justify-content: center;
+    }
+    .med{
+        margin-bottom: 1.5625rem;
+    }
+}
